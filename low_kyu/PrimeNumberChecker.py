@@ -5,8 +5,6 @@ def prime_checker(num):
             if num % i == 0:
                 return False
         return True
-    else:
-        return True
 
 
-print(prime_checker(16))
+print(prime_checker(-1))

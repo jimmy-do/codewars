@@ -7,4 +7,9 @@ def summation(n):
     return 1
 
 
+def summation2(n):
+    return sum(range(1, n+1))
+
+
 print(summation(3))
+print(summation2(3))

@@ -9,9 +9,9 @@
 # If an empty value ( null, None, Nothing etc. ) is given instead of an array, or the given array is an empty list or
 # a list with only 1 element, return 0.
 
-def exclude_highest_lowest(listy):
-    return sum(sorted(listy)[1:-1]) if sum(listy) and len(listy) > 0 else 0
+def excluding_highest_lowest(arr):
+    return sum(sorted(arr)[1:-1]) if len(arr) and arr > 0 else 0
 
 
-print(exclude_highest_lowest([1, 2, 3, 4, 5]))
-print(exclude_highest_lowest([0, 0]))
+print(excluding_highest_lowest([1, 2, 3, 4, 5]))
+print(excluding_highest_lowest([]))
